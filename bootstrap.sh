@@ -1,6 +1,6 @@
 #!/bin/bash
 
-app_name="cli-auto-deployment"
+app_name="adam-auto-deployment"
 
 sudo yum upgrade -y
 
@@ -64,4 +64,4 @@ chmod +x /bin/docker-compose
 # mail
 service postfix restart
 
-
+echo "All is done!~👍"
