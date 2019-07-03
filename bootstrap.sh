@@ -53,9 +53,9 @@ yum-config-manager \
     https://download.docker.com/linux/centos/docker-ce.repo
 yum-config-manager --disable docker-ce-edge
 yum install docker-ce
-systemctl start docker     #運行Docker守護進程
+systemctl start docker
 
-chkconfig docker up #開機自動啟動
+chkconfig docker up
 
 # Docker compose
 curl -L "https://github.com/docker/compose/releases/download/1.24.0/docker-compose-$(uname -s)-$(uname -m)" -o /bin/docker-compose
