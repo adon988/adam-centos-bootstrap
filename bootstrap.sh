@@ -28,6 +28,8 @@ php composer-setup.php
 
 php -r "unlink('composer-setup.php');"
 
+sudo mv composer.phar /usr/bin/composer
+
 # Swoole
 yum install php-pear php-devel -y
 pecl install swoole
