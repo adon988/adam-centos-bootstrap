@@ -80,4 +80,13 @@ call plug#end()
 let g:go_version_warning = 0
 " >  ~/.vimrc
 
+# vim monokai editor style
+cd ~/.vim
+mkdir colors
+cd colors
+wget https://raw.githubusercontent.com/sickill/vim-monokai/master/colors/monokai.vim
+echo "syntax enable
+colorscheme monokai" >> ~/.vimrc
+
+
 echo "All is done!~👍"
