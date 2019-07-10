@@ -68,6 +68,12 @@ chmod +x /bin/docker-compose
 # mail
 service postfix restart
 
+# go
+cd /
+wget https://dl.google.com/go/go1.12.6.linux-amd64.tar.gz
+tar -C /bin -xzf go1.12.6.linux-amd64.tar.gz
+export PATH=$PATH:/bin/go/bin
+rm -rf go1.12.6.linux-amd64.tar.gz
 
 # vim-go 
 # https://github.com/fatih/vim-go
