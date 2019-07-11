@@ -9,6 +9,10 @@ yum install epel-release -y
 # Basic Tools
 yum install net-tools fish vim lsof git wget zip unzip telnet mailx -y
 
+# Nginx
+yum install nginx -y
+systemctl enable nginx
+
 # PHP
 yum install centos-release-scl -y
 yum install php-fpm php-mysqlnd php-zip php-devel php-gd php-mcrypt php-mbstring php-curl php-xml php-pear php-bcmath php-json -y
