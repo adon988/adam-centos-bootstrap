@@ -35,7 +35,8 @@ sudo mv composer.phar /usr/bin/composer
 # Swoole
 yum install php-pear php-devel -y
 pecl install swoole
-echo "extension=swoole.so" > /etc/php.d/20-swoole.ini
+echo "extension=swoole.so
+swoole.use_shortname = 'Off'" > /etc/php.d/20-swoole.ini
 
 # Docker
 yum remove docker \
