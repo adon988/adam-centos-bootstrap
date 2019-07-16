@@ -115,6 +115,7 @@ Plug 'junegunn/fzf.vim'
   imap <c-x><c-k> <plug>(fzf-complete-word)
   imap <C-x><C-j> <plug>(fzf-complete-file-ag)
   imap <C-x><C-l> <plug>(fzf-complete-line)
+execute pathogen#infect()
 
   function! SearchWordWithAg()
     execute 'Ag' expand('<cword>')
@@ -177,8 +178,8 @@ Plug 'chrisbra/csv.vim'
 let g:csv_autocmd_arrange = 1
 
 Plug 'scrooloose/nerdtree'
-nnoremap <silent><C-\> :NERDTreeToggle<CR>
-
+nnoremap <silent><F5> :NERDTreeToggle<CR>
+let NERDTreeShowHidden=1
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 let g:WebDevIconsUnicodeDecorateFolderNodes = 1
 let g:DevIconsEnableFoldersOpenClose = 1
@@ -335,7 +336,6 @@ imap <C-S> <C-O>:update<CR><Right>
 
 set laststatus=2
 set background=dark
-color atom_material 
 
 let g:airline_theme="one"
 highlight Search guibg=NONE guifg=NONE gui=underline
