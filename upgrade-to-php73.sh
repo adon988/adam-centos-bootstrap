@@ -48,7 +48,7 @@ yum install -y php73
 
 # Not yet supportable by this version of Amazon Linux (without significant risk)
 # yum install -y php73-php-pecl-ssh2
-# yum install -y php73-php-gd
+yum install -y php73-php-gd
 # yum install -y php73-php-pecl-imagick
 # yum install -y php73-php-pecl-imagick-devel
 
@@ -63,7 +63,7 @@ yum install -y php73-php-common
 yum install -y php73-php-devel
 # yum install -y php73-php-embedded
 yum install -y php73-php-enchant
-# yum install -y php73-php-fpm
+yum install -y php73-php-fpm
 # Gd will require you to build libpng
 # yum install -y php73-php-geos
 # yum install -y php73-php-gmp
@@ -137,7 +137,7 @@ yum install -y php73-php-pecl-mcrypt
 # yum install -y php73-php-pecl-memprof
 # yum install -y php73-php-pecl-mogilefs
 # yum install -y php73-php-pecl-molten
-# yum install -y php73-php-pecl-mongodb
+yum install -y php73-php-pecl-mongodb
 # yum install -y php73-php-pecl-mosquitto
 # yum install -y php73-php-pecl-msgpack
 # yum install -y php73-php-pecl-msgpack-devel
@@ -160,7 +160,7 @@ yum install -y php73-php-pecl-oauth
 # yum install -y php73-php-pecl-raphf-devel
 # yum install -y php73-php-pecl-rar
 # yum install -y php73-php-pecl-rdkafka
-# yum install -y php73-php-pecl-redis4
+yum install -y php73-php-pecl-redis4
 # yum install -y php73-php-pecl-request
 # yum install -y php73-php-pecl-rpminfo
 # yum install -y php73-php-pecl-rrd
@@ -173,7 +173,7 @@ yum install -y php73-php-pecl-oauth
 # yum install -y php73-php-pecl-stats
 # yum install -y php73-php-pecl-stomp
 # yum install -y php73-php-pecl-svm
-# yum install -y php73-php-pecl-swoole4
+yum install -y php73-php-pecl-swoole4
 # yum install -y php73-php-pecl-sync
 # yum install -y php73-php-pecl-taint
 # yum install -y php73-php-pecl-tcpwrap
@@ -201,7 +201,7 @@ yum install -y php73-php-pecl-uuid
 # yum install -y php73-php-pecl-yaml
 # yum install -y php73-php-pecl-yar
 # yum install -y php73-php-pecl-yaz
-# yum install -y php73-php-pecl-zip
+yum install -y php73-php-pecl-zip
 # yum install -y php73-php-pecl-zmq
 # yum install -y php73-php-pggi
 # yum install -y php73-php-pgsql
