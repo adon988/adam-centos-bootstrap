@@ -42,6 +42,17 @@ pecl install swoole
 echo "extension=swoole.so
 swoole.use_shortname = 'Off'" > /etc/php.d/20-swoole.ini
 
+# PHP-zip
+yum install pcre-devel gcc zlib zlib-devel
+pecl install zip
+echo "extension=imagick.so" > /etc/php.d/20-imagick.ini
+
+# PHP-imagemagick
+yum install php-pear gcc
+yum install ImageMagick ImageMagick-devel ImageMagick-perl
+pecl install imagick
+echo "extension=zip.so" > /etc/php.d/20-zip.ini
+
 # Docker
 yum remove docker \
                   docker-client \
@@ -63,6 +74,7 @@ yum-config-manager \
 yum-config-manager --disable docker-ce-edge
 yum install docker-ce
 systemctl start docker
+systemctl enable docker
 
 chkconfig docker up
 
