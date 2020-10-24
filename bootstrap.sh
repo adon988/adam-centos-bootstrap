@@ -22,6 +22,8 @@ yum install yum-utils -y
 yum-config-manager --enable remi-php73 -y
 yum install php-fpm php-mysqlnd php-zip php-devel php-gd php-mcrypt php-mbstring php-curl php-xml php-pear php-bcmath php-json php-redis -y
 
+# Mysql Client
+yum install mysql -y
 
 # Composer
 cd /
